@@ -159,9 +159,10 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ![kong architecture](/images/kong15.png)
 
-
-    ![kong architecture](/images/kong16.png)
  
+    
+![kong architecture](/images/kong16.png)
+
 
 
 ### Kong Supports Hybrid Architecture
