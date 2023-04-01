@@ -98,6 +98,9 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ![kong interaction](/images/kong5.png)
 
+* Kong Gateway can simplify scaling microservices by being the abstraction layer that routes clients to your existing upstream service while building a new service. 
+*   It also applies a common policy for each request and response no matter where the target service is.
+
 
 ### Current Architecture vs Kong Architecture
 
@@ -159,8 +162,8 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ![kong architecture](/images/kong15.png)
 
- 
-    
+
+
 ![kong architecture](/images/kong16.png)
 
 
@@ -255,7 +258,16 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ![kong Gateway Modules](/images/kong28.png)
 
+<br>
 
+**Kong Manager** is the graphical user interface (GUI) for Kong Gateway. It uses the Kong Admin API under the hood to administer and control Kong Gateway.
+
+Here are some of the things you can do with Kong Manager:
+
+* Create new Routes and Services
+* Activate or deactivate plugins with a couple of clicks
+* Group your teams, services, plugins, consumer management, and everything else exactly how you want them
+* Monitor performance: visualize cluster-wide, workspace-level, or object-level health using intuitive, customizable dashboards.
 
 ### Kong Gateway Concepts    
     
@@ -374,6 +386,27 @@ This Hands-on Session will explain various component and functionality of the Ko
 
 
 ![Kong Plugin Hub](/images/kong41.png)
+
+
+#### Proxy Caching
+
+<br>
+
+ The Proxy Cache plugin accelerates performance by caching responses based on configurable response codes, content types, and request methods.
+
+* Installing the Proxy plugin globally means every proxy request to Kong Gateway will potentially be cached.
+* The Proxy Cache plugin is installed by default on Kong Gateway, and can be enabled by sending a POST request to the plugins object on the Admin API
+* If configuration was successful, you will receive a 201 response code.
+* You can check that the Proxy Cache plugin is working by sending GET requests and examining the returned headers.
+
+<br>
+
+| STATE |DESCRIPTION                                                                                                                                        |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Miss    | The request could be satisfied in cache, but an entry for the resource was not found in cache, and the request was proxied upstream.               |
+| Hit     | The request could be satisfied in cache, but an entry for the resource was not found in cache, and the request was proxied upstream.               |
+| Refresh | The resource was found in cache, but could not satisfy the request, due to Cache-Control behaviors or reaching its hard-coded cache_ttl threshold. |
+| Bypass  | The request could not be satisfied from cache based on plugin configuration.                                                                       |
 
 
 ### Installation of Docker and Configuring Admin API (Hands on)
@@ -713,6 +746,17 @@ curl -X DELETE http://localhost:8001/services/example-service/routes/<id-of-the-
 <br>
 
 ![Kong Plugin Hub](/images/kong47.png)
+
+<br>
+
+**Kong Manager** is the graphical user interface (GUI) for Kong Gateway. It uses the Kong Admin API under the hood to administer and control Kong Gateway.
+
+Here are some of the things you can do with Kong Manager:
+
+* Create new Routes and Services
+* Activate or deactivate plugins with a couple of clicks
+* Group your teams, services, plugins, consumer management, and everything else exactly how you want them
+* Monitor performance: visualize cluster-wide, workspace-level, or object-level health using intuitive, customizable dashboards.
 
 <br>
 
