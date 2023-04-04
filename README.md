@@ -21,7 +21,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 <br>
 
 
-![kong logo](/images/kong.jpg)<!--style="width:400%" -->
+![kong logo](images/kong.jpg)<!--style="width:400%" -->
 
 ## Introduction to Kong APIGateway
 
@@ -57,13 +57,13 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![software response to complex demand](/images/kong2.png)
+![software response to complex demand](images/kong2.png)
 
 ### Technology Evolution
 
 <br>
 
-![software response to complex demand](/images/kong3.png)
+![software response to complex demand](images/kong3.png)
 
 
 
@@ -71,7 +71,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![why kong](/images/kong1.png)
+![why kong](images/kong1.png)
 
 
 * Open Source - community edition
@@ -90,13 +90,13 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![kong example](/images/kong4.png)
+![kong example](images/kong4.png)
 
 ### Kong Interaction
 
 <br>
 
-![kong interaction](/images/kong5.png)
+![kong interaction](images/kong5.png)
 
 * Kong Gateway can simplify scaling microservices by being the abstraction layer that routes clients to your existing upstream service while building a new service. 
 *   It also applies a common policy for each request and response no matter where the target service is.
@@ -106,7 +106,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![current architecture](/images/kong6.png) ![kong architecture](/images/kong7.png)
+![current architecture](images/kong6.png) ![kong architecture](images/kong7.png)
 
 
 
@@ -118,13 +118,13 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![enabling microservice](/images/kong8.png)
+![enabling microservice](images/kong8.png)
 
 ### Kong Plugins
 
 <br>
 
-![kong plugins](/images/kong10.png)
+![kong plugins](images/kong10.png)
     
 
 
@@ -136,7 +136,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![kong plugins](/images/kong12.png)
+![kong plugins](images/kong12.png)
 
 
 * Kong is platform agnostic which means it can be installed and run in any platform like docker, kubernetes, amazon, ubuntu, debian etc..
@@ -146,25 +146,25 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![kong architecture](/images/kong13.png)   
+![kong architecture](images/kong13.png)   
 
 
 ### Kong Internal Architecture 
 
 <br>
 
-![kong architecture](/images/kong14.png)
+![kong architecture](images/kong14.png)
 
 
 ### Kong Deployment Architecture
 
 <br>
 
-![kong architecture](/images/kong15.png)
+![kong architecture](images/kong15.png)
 
 
 
-![kong architecture](/images/kong16.png)
+![kong architecture](images/kong16.png)
 
 
 
@@ -172,14 +172,14 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 <br>
 
-![kong architecture](/images/kong17.png)
+![kong architecture](images/kong17.png)
 
 
 ### Kong supports Centralized or Decentralized    
 
 <br>
 
-![kong architecture](/images/kong18.png)
+![kong architecture](images/kong18.png)
 
 
 ### Kong Features
@@ -189,35 +189,35 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 <!--style="font-size:20px" -->
 **Authentication**
 
-![kong Features](/images/kong20.png)
+![kong Features](images/kong20.png)
 
 <br>
 
 <!--style="font-size:20px" -->
 **Security**
 
-![kong Features](/images/kong21.png)
+![kong Features](images/kong21.png)
 
 <br>
 
 <!--style="font-size:20px" -->
 **Traffic Control**
 
-![kong Features](/images/kong22.png)
+![kong Features](images/kong22.png)
 
 <br>
 
 <!--style="font-size:20px" -->
 **Transformation**
 
-![kong Features](/images/kong23.png)
+![kong Features](images/kong23.png)
 
 <br>
 
 <!--style="font-size:20px" -->
 **Logging**
 
-![kong Features](/images/kong24.png)
+![kong Features](images/kong24.png)
 
 
 ## Kong Packages and modes 
@@ -232,12 +232,12 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ### Community Edition
 
-![kong Community Edition](/images/kong25.png)
+![kong Community Edition](images/kong25.png)
 
 
 ### Enterprise Edition    
 
-![kong Enterprise Edition](/images/kong26.png)
+![kong Enterprise Edition](images/kong26.png)
 
 
 ## Kong Gateway Modules And Concepts
@@ -249,14 +249,14 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 <!--style="font-size:20px" -->
 **Diagram 1:**
 
-![kong Gateway Modules](/images/kong27.png)
+![kong Gateway Modules](images/kong27.png)
 
 <br>
 
 <!--style="font-size:20px" -->
 **Diagram 2:**
 
-![kong Gateway Modules](/images/kong28.png)
+![kong Gateway Modules](images/kong28.png)
 
 <br>
 
@@ -273,7 +273,7 @@ Here are some of the things you can do with Kong Manager:
     
 <br>
 
-![kong Gateway Concepts](/images/kong29.png)
+![kong Gateway Concepts](images/kong29.png)
 
 
 | Concept/Feature           | Description                                                                                           | 
@@ -297,13 +297,13 @@ Here are some of the things you can do with Kong Manager:
 
 <br>
 
-![kong Gateway Concepts](/images/kong30.png)
+![kong Gateway Concepts](images/kong30.png)
 
 ### Kong Admin API
 
 <br>
 
-![kong Gateway Concepts](/images/kong31.png)
+![kong Gateway Concepts](images/kong31.png)
 
 ### Services and Routes
 
@@ -313,7 +313,7 @@ Here are some of the things you can do with Kong Manager:
 
 <br>
 
- ![services and routes](/images/kong32.png)
+ ![services and routes](images/kong32.png)
 
 ### Admin API
 
@@ -332,29 +332,29 @@ This Hands-on Session will explain various component and functionality of the Ko
 
 <br>
 
- ![services](/images/kong33.png)
+ ![services](images/kong33.png)
 
 
- ![services](/images/kong34.png)
+ ![services](images/kong34.png)
 
 #### Routes
 
 <br>
 
- ![routes](/images/kong35.png)
+ ![routes](images/kong35.png)
 
 
- ![routes](/images/kong36.png)
+ ![routes](images/kong36.png)
 
 
 #### Plugins
 
 <br>
 
-![plugins](/images/kong37.png)
+![plugins](images/kong37.png)
 
 
-![plugins](/images/kong38.png)
+![plugins](images/kong38.png)
 
 #### Authentication
 
@@ -375,17 +375,17 @@ This Hands-on Session will explain various component and functionality of the Ko
 
 <br>
 
-![Kong Plugin Hub](/images/kong39.png)
+![Kong Plugin Hub](images/kong39.png)
 
 
 #### Consumer
 
 <br>
 
-![Kong Plugin Hub](/images/kong40.png)
+![Kong Plugin Hub](images/kong40.png)
 
 
-![Kong Plugin Hub](/images/kong41.png)
+![Kong Plugin Hub](images/kong41.png)
 
 
 #### Proxy Caching
@@ -700,16 +700,16 @@ curl -X DELETE http://localhost:8001/services/example-service/routes/<id-of-the-
 ### API Request Flow and Plugins
 
 
-![Kong Plugin Hub](/images/kong42.png)
+![Kong Plugin Hub](images/kong42.png)
 
 
-![Kong Plugin Hub](/images/kong43.png)
+![Kong Plugin Hub](images/kong43.png)
 
 
-![Kong Plugin Hub](/images/kong44.png)
+![Kong Plugin Hub](images/kong44.png)
 
 
-![Kong Plugin Hub](/images/kong45.png)
+![Kong Plugin Hub](images/kong45.png)
 
 
 ### API Request flow 
@@ -738,14 +738,14 @@ curl -X DELETE http://localhost:8001/services/example-service/routes/<id-of-the-
 
 <br>
 
-![Kong Plugin Hub](/images/kong46.png)
+![Kong Plugin Hub](images/kong46.png)
 
 
 ### Kong Manager
 
 <br>
 
-![Kong Plugin Hub](/images/kong47.png)
+![Kong Plugin Hub](images/kong47.png)
 
 <br>
 
@@ -760,7 +760,7 @@ Here are some of the things you can do with Kong Manager:
 
 <br>
 
-![Kong Plugin Hub](/images/kong48.png)
+![Kong Plugin Hub](images/kong48.png)
 
 ### Plugins (Hands on)
 
@@ -1204,18 +1204,18 @@ curl -s http://localhost:9090/api/v1/query?query=kong_node_info
 
 ## Kong Vitals
 
-![kong vitals](/images/kong49.png)
+![kong vitals](images/kong49.png)
 
 
 ### Workspace
 
-![kong vitals](/images/kong50.png)
+![kong vitals](images/kong50.png)
 
 
 ### Teams
 
 
-![kong vitals](/images/kong51.png)
+![kong vitals](images/kong51.png)
 
 
 
@@ -1228,119 +1228,119 @@ curl -s http://localhost:9090/api/v1/query?query=kong_node_info
 
 <br>
 
-![kong vitals](/images/kong52.png)
+![kong vitals](images/kong52.png)
 
 
 ### History of OpenAPI
 
 <br>
 
-![kong vitals](/images/kong53.png)
+![kong vitals](images/kong53.png)
 
 
 ### Open API specification Uses
 
 <br>
 
-![kong vitals](/images/kong54.png)
+![kong vitals](images/kong54.png)
 
 
 ### Sample OpenAPI Document
 
 <br>
 
-![kong vitals](/images/kong55.png)
+![kong vitals](images/kong55.png)
 
 
 ### OpenAPI Document Format
 
 <br>
 
-![kong vitals](/images/kong56.png)
+![kong vitals](images/kong56.png)
 
 
 ### OpenAPI Document: Openapi Section
 
 <br>
 
-![kong vitals](/images/kong57.png)
+![kong vitals](images/kong57.png)
 
 
 ### OpenAPI Document: Info Section
 
 <br>
 
-![kong vitals](/images/kong58.png)
+![kong vitals](images/kong58.png)
 
 
 ### OpenAPI Document: tags Section
 
 <br>
 
-![kong vitals](/images/kong59.png)
+![kong vitals](images/kong59.png)
 
 
 ### OpenAPI Document: paths Section
 
 <br>
 
-![kong vitals](/images/kong60.png)
+![kong vitals](images/kong60.png)
 
 
 ### OpenAPI Document: externalDocs Section
 
 <br>
 
-![kong vitals](/images/kong61.png)
+![kong vitals](images/kong61.png)
 
 
 ### OpenAPI Document: servers Section
 
 <br>
 
-![kong vitals](/images/kong62.png)
+![kong vitals](images/kong62.png)
 
 
 ### OpenAPI Document: components Section
 
 <br>
 
-![kong vitals](/images/kong63.png)
+![kong vitals](images/kong63.png)
 
 
 ## Insomnia
  
  <br>
 
-![kong vitals](/images/kong64.png)
+![kong vitals](images/kong64.png)
 
 
 ### Prerequisite
 
 <br>
 
-![kong vitals](/images/kong65.png)
+![kong vitals](images/kong65.png)
 
 
 ### Insomnia Design Mode
 
 <br>
 
-![kong vitals](/images/kong66.png)
+![kong vitals](images/kong66.png)
 
 
 ### Insomnia Debug Mode
 
 <br>
 
-![kong vitals](/images/kong67.png)
+![kong vitals](images/kong67.png)
 
 
 ### Insomnia Test Mode
 
 <br>
 
-![kong vitals](/images/kong68.png)
+![kong vitals](images/kong68.png)
 
 <br>
 
@@ -1348,41 +1348,41 @@ curl -s http://localhost:9090/api/v1/query?query=kong_node_info
 
 <br>
 
-![kong vitals](/images/kong69.png)
+![kong vitals](images/kong69.png)
 
 
 ## Imperative vs. Declarative
 
 <br>
 
-![kong vitals](/images/kong70.png)
+![kong vitals](images/kong70.png)
 
 ### Imperative Configuration
 
 <br>
 
-![kong vitals](/images/kong71.png)
+![kong vitals](images/kong71.png)
 
 
 ### Declarative Configuration (decK)
 
 <br>
 
-![kong vitals](/images/kong72.png)
+![kong vitals](images/kong72.png)
 
 
 ### decK Commands
 
 <br>
 
-![kong vitals](/images/kong73.png)
+![kong vitals](images/kong73.png)
 
 
 ### Working with decK
 
 <br>
 
-![kong vitals](/images/kong74.png)
+![kong vitals](images/kong74.png)
 
 
 ## Introduction to APIOps
@@ -1393,11 +1393,11 @@ curl -s http://localhost:9090/api/v1/query?query=kong_node_info
 **How?**
 
 
-![kong vitals](/images/kong75.png)
+![kong vitals](images/kong75.png)
 
 <br>
 
-![kong vitals](/images/kong76.png)
+![kong vitals](images/kong76.png)
 
 
 ## Deploying API Gateway Within a CI/CD Pipeline
