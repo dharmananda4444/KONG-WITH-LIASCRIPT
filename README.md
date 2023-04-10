@@ -23,7 +23,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ![kong logo](images/kong.jpg)<!--style="width:400%" -->
 
-## Introduction to Kong APIGateway
+## Introductionto  Kong APIGateway
 
 <br>
 
@@ -66,6 +66,13 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 ![software response to complex demand](images/kong3.png)
 
 
+### Without Kong 
+
+<br>
+
+![kong example](images/kong4.png)
+
+
 
 ## Why Kong?
 
@@ -86,11 +93,6 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 * Also supports Enterprise edition and support for advanced use- case
 
 
-### Kong Example
-
-<br>
-
-![kong example](images/kong4.png)
 
 ### Kong Interaction
 
@@ -142,7 +144,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 * Kong is platform agnostic which means it can be installed and run in any platform like docker, kubernetes, amazon, ubuntu, debian etc..
 
 
-## Kong Architecture
+## Kong Architectures
 
 <br>
 
@@ -182,40 +184,61 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 ![kong architecture](images/kong18.png)
 
 
-### Kong Features
+## Kong Features
 
 <br>
 
 <!--style="font-size:20px" -->
-**Authentication**
+The main Features of kong are listed below :
+
+<!--style="font-size:20px" -->
+* [Authentication](#authentication)
+* [Security](#Security)
+* [Traffic Control](#traffic-control)
+* [Transformation](#transformation)
+* [Logging](#logging)
+
+<!--style="font-size:20px" -->
+### Authentication
+
+<br>
 
 ![kong Features](images/kong20.png)
 
 <br>
 
 <!--style="font-size:20px" -->
-**Security**
+### Security
+
+<br>
 
 ![kong Features](images/kong21.png)
 
 <br>
 
 <!--style="font-size:20px" -->
-**Traffic Control**
+### Traffic Control
+
+<br>
 
 ![kong Features](images/kong22.png)
+
 
 <br>
 
 <!--style="font-size:20px" -->
-**Transformation**
+### Transformation
+
+<br>
 
 ![kong Features](images/kong23.png)
 
 <br>
 
 <!--style="font-size:20px" -->
-**Logging**
+### Logging
+
+<br>
 
 ![kong Features](images/kong24.png)
 
@@ -414,7 +437,24 @@ This Hands-on Session will explain various component and functionality of the Ko
 <br>
 
 <!--style="font-size:20px" -->
-**1. Install docker on ubuntu machine**
+Follow these steps:
+
+<!--style="font-size:20px" -->
+[1. Install docker on ubuntu machine](#install-docker-on-ubuntu-machine)
+
+<!--style="font-size:20px" -->
+[2. Create a docker network](#create-a-docker-network)
+
+<!--style="font-size:20px" -->
+[3. Install Kong in DB-less mode](#install-kong-in-db-less-mode)
+
+<!--style="font-size:20px" -->
+[4. Install Kong in DB mode](#install-kong-in-db-mode)
+
+<!--style="font-size:20px" -->
+#### Install docker on ubuntu machine
+
+<br>
 
  Reference link: https://docs.docker.com/engine/install/ubuntu/ 
 
@@ -423,7 +463,11 @@ This Hands-on Session will explain various component and functionality of the Ko
 <br>
 
  <!--style="font-size:20px" -->
-**2. Create a docker network**   
+#### Create a docker network   
+
+<br>
+
+* It creates the network with the name **kong-net**
 
 ``` 
 $ docker create network kong-net  
@@ -432,7 +476,7 @@ $ docker create network kong-net
 
 
 <!--style="font-size:20px" -->
-**3. Install Kong in DB-less mode**
+#### Install Kong in DB-less mode
 
 <br>
 
@@ -478,7 +522,7 @@ $ docker rm kong-dbless
 <br>
 
 <!--style="font-size:20px" -->
-**4. Install Kong in DB mode**
+#### Install Kong in DB mode
 
 <br>
 
@@ -529,10 +573,16 @@ curl http://localhost:8001/
 <br>
 
 <!--style="font-size:20px" -->
-**Kong default ports**
+#### Kong default ports
+
+<br>
+
 By default, Kong listens on the following ports:
 
+  <br>
+
 **Kong api gateway proxy ports :**
+
 
 **8000**: listens for incoming HTTP traffic from your clients, and forwards it to your upstream services.
 
@@ -582,9 +632,30 @@ $ kong start
 
 ### Configuring a Service in Admin API (Hands on)  
                                 
+<br>
 
 <!--style="font-size:20px" -->
-**1. Add Service**
+Follow these steps:
+
+<!--style="font-size:20px" -->
+[1. Add Service](#add-service)
+
+<!--style="font-size:20px" -->
+[2. Add Route](#add-route)
+
+<!--style="font-size:20px" -->
+[3. Verify the api gateway endpoint using kong proxy port 8000](#verify-the-api-gateway-endpoint-using-kong-proxy-port-8000)
+
+<!--style="font-size:20px" -->
+[4. Configure  Plugin](#configure-plugin)
+
+<!--style="font-size:20px" -->
+[5. Adding Consumer](#adding-consumer)
+
+<!--style="font-size:20px" -->
+#### Add Service
+
+<br>
 
 ```
 curl -i -X POST --url http://localhost:8001/services/ 
@@ -600,7 +671,9 @@ curl  http://localhost:8001/services/example-service
 
 
 <!--style="font-size:20px" -->
-**2. Add Route**
+#### Add Route
+
+<br>
 
 ```
 curl -i -X POST http://localhost:8001/services/
@@ -618,17 +691,19 @@ curl http://localhost:8001/routes
 <br>
 
 <!--style="font-size:20px" -->
-**3. Verify the api gateway endpoint using kong proxy port 8000**
+#### Verify the api gateway endpoint using kong proxy port 8000
 
+<br>
 
 ```
 curl http://localhost:8000/mock/request
 ```
 
-<br>
 
 <!--style="font-size:20px" -->
-**4. Configure  Plugin**
+#### Configure  Plugin
+
+<br>
 
 **1.Configure key-auth plugin for example-service**
 
@@ -647,7 +722,9 @@ curl http://localhost:8000/mock/request
 <br>
 
 <!--style="font-size:20px" -->
-**5. Adding Consumer**
+#### Adding Consumer
+
+<br>
 
 **1. Create a consumer through Admin API**
 
@@ -700,7 +777,7 @@ curl -X DELETE http://localhost:8001/services/example-service/routes/<id-of-the-
 ### API Request Flow and Plugins
 
 
-![Kong Plugin Hub](images/kong42.png)
+![Kong Plugin Hub](images/kong42.png)<!-- width="700" height="900" -->
 
 
 ![Kong Plugin Hub](images/kong43.png)
