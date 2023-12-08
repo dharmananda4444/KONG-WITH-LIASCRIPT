@@ -5,13 +5,6 @@ email:    dharmananda@swayaan.com
 
 version:  3.0
 
-language: en
-
-script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
-          https://felixhao28.github.io/JSCPP/dist/JSCPP.es5.min.js
-
-import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md 
-        https://raw.githubusercontent.com/liaTemplates/TextAnalysis/main/README.md
 
 -->
 # KONG API-GATEWAY
@@ -432,7 +425,7 @@ This Hands-on Session will explain various component and functionality of the Ko
 | Bypass  | The request could not be satisfied from cache based on plugin configuration.                                                                       |
 
 
-### Installation of Docker and Configuring Admin API (Hands on)
+## Installation of Docker and Configuring Admin API (Hands on)
 
 <br>
 
@@ -452,7 +445,7 @@ Follow these steps:
 [4. Install Kong in DB mode](#install-kong-in-db-mode)
 
 <!--style="font-size:20px" -->
-#### Install docker on ubuntu machine
+### Install docker on ubuntu machine
 
 <br>
 
@@ -463,7 +456,7 @@ Follow these steps:
 <br>
 
  <!--style="font-size:20px" -->
-#### Create a docker network   
+### Create a docker network   
 
 <br>
 
@@ -476,7 +469,7 @@ $ docker create network kong-net
 
 
 <!--style="font-size:20px" -->
-#### Install Kong in DB-less mode
+### Install Kong in DB-less mode
 
 <br>
 
@@ -522,7 +515,7 @@ $ docker rm kong-dbless
 <br>
 
 <!--style="font-size:20px" -->
-#### Install Kong in DB mode
+### Install Kong in DB mode
 
 <br>
 
@@ -573,7 +566,7 @@ curl http://localhost:8001/
 <br>
 
 <!--style="font-size:20px" -->
-#### Kong default ports
+### Kong default ports
 
 <br>
 
@@ -630,7 +623,7 @@ $ kong start
 ```
 
 
-### Configuring a Service in Admin API (Hands on)  
+## Configuring a Service in Admin API (Hands on)  
                                 
 <br>
 
@@ -653,7 +646,7 @@ Follow these steps:
 [5. Adding Consumer](#adding-consumer)
 
 <!--style="font-size:20px" -->
-#### Add Service
+### Add Service
 
 <br>
 
@@ -671,7 +664,7 @@ curl  http://localhost:8001/services/example-service
 
 
 <!--style="font-size:20px" -->
-#### Add Route
+### Add Route
 
 <br>
 
@@ -691,7 +684,7 @@ curl http://localhost:8001/routes
 <br>
 
 <!--style="font-size:20px" -->
-#### Verify the api gateway endpoint using kong proxy port 8000
+### Verify the api gateway endpoint using kong proxy port 8000
 
 <br>
 
@@ -701,7 +694,7 @@ curl http://localhost:8000/mock/request
 
 
 <!--style="font-size:20px" -->
-#### Configure  Plugin
+### Configure  Plugin
 
 <br>
 
@@ -722,7 +715,7 @@ curl http://localhost:8000/mock/request
 <br>
 
 <!--style="font-size:20px" -->
-#### Adding Consumer
+### Adding Consumer
 
 <br>
 
@@ -774,7 +767,7 @@ curl http://localhost :8001/plugins
 curl -X DELETE http://localhost:8001/services/example-service/routes/<id-of-the-route>
 ```
 
-### API Request Flow and Plugins
+## API Request Flow and Plugins
 
 
 ![Kong Plugin Hub](images/kong42.png)<!-- width="700" height="900" -->
